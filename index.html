@@ -11,7 +11,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <title>Firas Belhiba portfolio</title>
+  <title>Firas Belhiba | MSc Finance & AI | Blockchain Engineer & PhD Applicant</title>
+
+  <meta name="description" content="Firas Belhiba - Blockchain engineer and AI practitioner with 7+ years experience. CTO at Dar Blockchain. MSc Finance & AI at ESTIAM. Award-winning builder (NEARCON 2022, Hedera Hackathon 2025). PhD applicant in Blockchain & DLT." />
+  <meta name="keywords" content="Firas Belhiba, blockchain engineer, DeFi, Hedera, Ethereum, Solana, AI, PhD, smart contracts, Web3" />
+  <meta name="author" content="Firas Belhiba" />
+  <meta property="og:title" content="Firas Belhiba | Blockchain Engineer & PhD Applicant" />
+  <meta property="og:description" content="Blockchain engineer and AI practitioner with 7+ years experience building decentralised systems. CTO at Dar Blockchain. Award-winning builder and PhD applicant." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://firasbelhiba.github.io/" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -29,6 +37,105 @@
       <script src="js/modernizr.custom.js?ver=4"></script>
     <![endif]-->
   <!-- /Styles -->
+
+  <!-- Custom Styles -->
+  <style>
+    /* Section dividers */
+    #about, #portfolio, #teaching, #awards, #research, #contact {
+      border-top: 1px solid rgba(152, 119, 80, 0.15);
+    }
+
+    /* Skills tag/chip layout */
+    .skills_section { padding-top: 10px; }
+    .skill_group { margin-bottom: 25px; }
+    .skill_group:last-child { margin-bottom: 0; }
+    .skill_group_title {
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--mc);
+      margin-bottom: 12px;
+    }
+    .skill_tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill_tag {
+      display: inline-block;
+      padding: 6px 16px;
+      border: 1px solid rgba(152, 119, 80, 0.35);
+      border-radius: 20px;
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #ccc;
+      transition: all 0.3s ease;
+      background: rgba(152, 119, 80, 0.05);
+    }
+    .skill_tag:hover {
+      border-color: var(--mc);
+      color: #fff;
+      background: rgba(152, 119, 80, 0.15);
+    }
+
+    /* Teaching section accent */
+    #teaching .resumo_fn_boxed_list .item {
+      border-left: 3px solid var(--mc);
+      padding-left: 20px;
+    }
+
+    /* Awards section styling */
+    #awards .resumo_fn_boxed_list .item_top span {
+      color: var(--mc);
+      font-weight: 500;
+    }
+
+    /* Research interests cards */
+    .research_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .research_grid { grid-template-columns: 1fr; }
+    }
+    .research_card {
+      border: 1px solid rgba(152, 119, 80, 0.2);
+      border-radius: 4px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      background: rgba(152, 119, 80, 0.03);
+    }
+    .research_card:hover {
+      border-color: var(--mc);
+      background: rgba(152, 119, 80, 0.08);
+      transform: translateY(-2px);
+    }
+    .research_card h4 {
+      font-family: 'Jost', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .research_card p {
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #888;
+    }
+
+    /* Boxed list hover effect for Teaching/Awards */
+    #teaching .resumo_fn_boxed_list li,
+    #awards .resumo_fn_boxed_list li {
+      transition: transform 0.2s ease;
+    }
+    #teaching .resumo_fn_boxed_list li:hover,
+    #awards .resumo_fn_boxed_list li:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+  <!-- /Custom Styles -->
 </head>
 
 <body>
@@ -72,17 +179,10 @@
                 <div class="resumo_fn_main_title">
                   <h3 class="subtitle">Introduction</h3>
                   <h3 class="title">
-                    Software engineer , Full-Stack & Blockchain developer ( Currently CTO)
+                    MSc Finance & AI | Blockchain Engineer & PhD Applicant
                   </h3>
                   <p class="desc">
-                    Hello, I'm Firas Belhiba , a software engineer who likes to code stuff that people find useful. When
-                    I'm not busy hacking away at my keyboard, you can find me exploring new technologies, watching
-                    sci-fi movies, or trying to convince my dad to buy bitcoin. I have a passion for developing
-                    blockchain applications that disrupt industries, create innovative solutions , and, most
-                    importantly, make me look like a genius. As a blockchain engineer, I've been known to solve complex
-                    problems with blockchain technology, smart contracts, and DeFi, but I'm still trying to figure out
-                    how to explain blockchain to my mom. If you're looking for a highly skilled, motivated, and slightly
-                    nerdy software engineer, then look no further! Let's connect and make some blockchain magic happen.
+                    Blockchain engineer and AI practitioner with 7+ years of hands-on experience building decentralised systems across Hedera, Ethereum, Solana, NEAR, and Massa. Currently completing a Master's in Finance & AI (ESTIAM), combining quantitative modelling with applied machine learning on blockchain data. Expertise spans DeFi protocol design, cryptoeconomics, on-chain analytics, and smart contract engineering. Award-winning builder (NEARCON 2022, Hedera Hackathon 2025) with strong interest in applying ML/AI methods to large-scale blockchain forensics, consensus modelling, and token economy design.
                   </p>
                   <img src="img/signature.png" alt="" />
                 </div>
@@ -101,17 +201,7 @@
                   <h3 class="subtitle">About Me</h3>
                   <h3 class="title">Biography</h3>
                   <p class="desc">
-                    I had my baccalaureate in mathematics , then I continued
-                    my studies in the higher school of engineers (ESPRIT) for
-                    5 years . Over the past years, I have also been a proud
-                    web developer in multiple companies (Devnet, Trame, Addinn
-                    ...), during the present I had the opportunity to apply
-                    newly acquired knowledge to university, to real-world
-                    needs and applications, but also acquire many new skills
-                    and task-specific tools that I did . In additon to that ,
-                    I am a freelancer , I did many freelance projects and I
-                    work currently on blockchain projects which I enjoy the
-                    most .
+                    Blockchain engineer and AI practitioner with 7+ years of experience building decentralised systems across Hedera, Ethereum, Solana, NEAR, and Massa. Currently CTO at Dar Blockchain and completing a Master's in Finance & AI at ESTIAM, Paris. Previously CTO at Lightency, where I led a full Web3 green energy ecosystem. Award-winning builder with expertise in DeFi protocol design, cryptoeconomics, on-chain analytics, and smart contract engineering. Official Hedera Hashgraph certifier, Fintech Master instructor, and mentor to 10,000+ developers across Africa.
                   </p>
                 </div>
                 <!-- /Main Title -->
@@ -124,37 +214,22 @@
                         <th>Name</th>
                         <th>Firas Belhiba</th>
                       </tr>
-                      <!-- <tr>
-                        <th>Birthday</th>
-                        <th>3rd July 1998</th>
-                      </tr>
-                      <tr>
-                        <th>Age</th>
-                        <th>23 years</th>
-                      </tr> -->
                       <tr>
                         <th>Address</th>
-                        <th>Tunisia , Ariana</th>
+                        <th>France</th>
                       </tr>
                       <tr>
                         <th>Phone</th>
                         <th>
-                          <a href="tel:+21641733869">(+216) 41 733 869</a>
+                          <a href="tel:+33763808581">(+33) 7 63 808581</a>
                         </th>
                       </tr>
                       <tr>
                         <th>Email</th>
                         <th>
-                          <a href="mailto:firasbenhiba49@gmail.com"><span
-                              class="__cf_email__">firasbenhiba49@gmail.com</span></a>
+                          <a href="mailto:firasbenhiba49@gmail.com">firasbenhiba49@gmail.com</a>
                         </th>
                       </tr>
-                      <!-- <tr>
-                          <th>Skype</th>
-                          <th>
-                            <a href="skype:skypename">Skypename</a>
-                          </th>
-                        </tr> -->
                     </table>
                   </div>
                   <div class="about_right">
@@ -195,15 +270,37 @@
                           <li>
                             <div class="item">
                               <div class="item_top">
+                                <h5>Dar Blockchain</h5>
+                                <span>France ( Jan 2025 — Present )</span>
+                              </div>
+                              <h3>Chief Technology Officer (CTO)</h3>
+                              <p>
+                                Drive overall technical vision, system architecture, and R&D roadmap across the Web3 product portfolio. Lead cross-functional engineering teams on DeFi, NFT, and AI-powered blockchain infrastructure across Hedera, Ethereum, Massa, and Solana.
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item">
+                              <div class="item_top">
+                                <h5>Dar Blockchain</h5>
+                                <span>France ( 2021 — Jan 2025 )</span>
+                              </div>
+                              <h3>Tech Lead</h3>
+                              <p>
+                                Architected and built decentralised applications across Hedera, Ethereum, Massa, and Solana. Built Mariposa — AI-powered agentic Web3 wallet. Organised Hedera Africa Hackathon 2025 ($2M+ prize pool, 10,000+ participants).
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item">
+                              <div class="item_top">
                                 <h5>Lightency</h5>
-                                <span>France, Paris ( Mar 2023 — Today )</span>
+                                <span>France, Paris ( Mar 2023 — Feb 2024 )</span>
                               </div>
                               <h3>Chief Technology Officer</h3>
-                              <!-- <p>
-                                  Adipisicing Lorem ipsum dolor sit amet,
-                                  consectetur elit, sed do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua.
-                                </p> -->
+                              <p>
+                                Led full Web3 green energy ecosystem in partnership with STEG, NEAR, Hedera, Aptos, and MEDREC. Built REC Platform on NEAR Protocol for Renewable Energy Certificate issuance and trading.
+                              </p>
                             </div>
                           </li>
                           <li>
@@ -212,76 +309,21 @@
                                 <h5>Lightency</h5>
                                 <span>France, Paris ( May 2022 — Feb 2023 )</span>
                               </div>
-                              <h3>
-                                Technical Blockchain Team Leader</h3>
-                              <!-- <p>
-                                  Adipisicing Lorem ipsum dolor sit amet,
-                                  consectetur elit, sed do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua.
-                                </p> -->
-                            </div>
-                          </li>
-                          <li>
-                            <div class="item">
-                              <div class="item_top">
-                                <h5>Addinn</h5>
-                                <span>Tunisia , Ariana ( Aug 2021 — Oct 2022 )</span>
-                              </div>
-                              <h3>Jr. Full-stack engineer</h3>
-                              <!-- <p>
-                                  Adipisicing Lorem ipsum dolor sit amet,
-                                  consectetur elit, sed do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua.
-                                </p> -->
-                            </div>
-                          </li>
-                          <li>
-                            <div class="item">
-                              <div class="item_top">
-                                <h5>Trame</h5>
-                                <span>Tunisia , Ariana ( Feb 2021 — Aug 2021
-                                  )</span>
-                              </div>
-                              <h3>
-                                Full-stack developer ( Angular + .Net core )
-                              </h3>
+                              <h3>Technical Blockchain Team Leader</h3>
                               <p>
-                                I've been working on the official company
-                                website which we deployed it successfully . In
-                                addition to that an E-commerce website for the
-                                same company.
+                                Developed GreenTrust platform using evolvable NFTs and Zero-Knowledge proofs for energy certification. Implemented multi-network smart contract deployments and cross-chain bridge infrastructure.
                               </p>
                             </div>
                           </li>
                           <li>
                             <div class="item">
                               <div class="item_top">
-                                <h5>Devnet</h5>
-                                <span>Tunisia , Ariana (Dec 2020 - Oct
-                                  2020)</span>
+                                <h5>ADDINN / Trame / DEVNET</h5>
+                                <span>Tunisia ( May 2020 — Oct 2022 )</span>
                               </div>
-                              <h3>
-                                Back-end Developer ( Laravel + Vanilla
-                                javascript )
-                              </h3>
+                              <h3>Full Stack & Backend Engineer</h3>
                               <p>
-                                I worked on the maintenance of an existant
-                                project built with laravel . Which is a
-                                chatbot called "Bravo Chat"
-                              </p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="item">
-                              <div class="item_top">
-                                <h5>HTL Travel agency</h5>
-                                <span>Russia , Saint-Petersburg (Jan 2019 — Jan
-                                  2020)</span>
-                              </div>
-                              <h3>Web Designer</h3>
-                              <p>
-                                I worked remotely on the web design for
-                                multiple trips advertisement .
+                                Enterprise .NET + Angular applications, MEAN stack web apps, and server-side applications with Laravel. Built and deployed production websites and RESTful API integrations.
                               </p>
                             </div>
                           </li>
@@ -299,32 +341,25 @@
                           <li>
                             <div class="item">
                               <div class="item_top">
-                                <h5>
-                                  Private Higher School of Engineering and
-                                  Technology (ESPRIT)
-                                </h5>
-                                <span>2017 — 2022</span>
+                                <h5>ESTIAM</h5>
+                                <span>Paris, France ( 2024 — Present )</span>
                               </div>
-                              <h3>Computer Science</h3>
-                              <!-- <p>
-                                  Adipisicing Lorem ipsum dolor sit amet,
-                                  consectetur elit, sed do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua.
-                                </p> -->
+                              <h3>Master's in Finance & Artificial Intelligence</h3>
+                              <p>
+                                Alternance with Electrify Network. Specialisation: Chef en Intelligence Artificielle — advanced ML, quantitative finance, AI systems. Thesis area: AI-driven analytics on blockchain transaction networks and DeFi protocol behaviour.
+                              </p>
                             </div>
                           </li>
                           <li>
                             <div class="item">
                               <div class="item_top">
-                                <h5>Manzah 6</h5>
-                                <span> 2017 </span>
+                                <h5>ESPRIT</h5>
+                                <span>Tunisia ( 2017 — 2022 )</span>
                               </div>
-                              <h3>Baccalaureate in mathematics</h3>
-                              <!-- <p>
-                                  Adipisicing Lorem ipsum dolor sit amet,
-                                  consectetur elit, sed do eiusmod tempor
-                                  incididunt ut labore et dolore magna aliqua.
-                                </p> -->
+                              <h3>Engineering Degree in Computer Science</h3>
+                              <p>
+                                5-year engineering programme covering algorithms, distributed systems, and software architecture.
+                              </p>
                             </div>
                           </li>
                         </ul>
@@ -335,79 +370,90 @@
 
                     <!-- #3 tab content -->
                     <div id="tab3" class="tab_item">
-                      <!-- Progress Bar -->
-                      <div class="">
-                        <div class="progress_item">
-                          <div class="item_in">
-                            <p>Languages:</p>
-                            <h3 class="progress_title">
-                              Javascript , Typescript, C# , Python and
-                              Solidity
-                            </h3>
-                            <span class="progress_percent"></span>
-                            <div class="bg_wrap">
-                              <div class="progress_bg"></div>
-                            </div>
+                      <!-- Skills Tags -->
+                      <div class="skills_section">
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">Blockchain & DLT</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Hedera Hashgraph</span>
+                            <span class="skill_tag">Ethereum</span>
+                            <span class="skill_tag">Solana</span>
+                            <span class="skill_tag">NEAR Protocol</span>
+                            <span class="skill_tag">Massa</span>
+                            <span class="skill_tag">Avalanche</span>
+                            <span class="skill_tag">Polygon</span>
+                            <span class="skill_tag">TON</span>
                           </div>
                         </div>
-
-                        <div class="progress_item">
-                          <div class="item_in">
-                            <p>Frameworks</p>
-                            <h3 class="progress_title">
-                              Express , .Net , Angular , ReactJs , NextJs
-                              ,React Native , Django and Bootstrap .
-                            </h3>
-                            <span class="progress_percent"></span>
-                            <div class="bg_wrap">
-                              <div class="progress_bg"></div>
-                            </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">Smart Contracts</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Solidity</span>
+                            <span class="skill_tag">Rust</span>
+                            <span class="skill_tag">Move</span>
+                            <span class="skill_tag">Hardhat</span>
+                            <span class="skill_tag">Foundry</span>
+                            <span class="skill_tag">OpenZeppelin</span>
+                            <span class="skill_tag">Smart Contract Auditing</span>
                           </div>
                         </div>
-
-                        <div class="progress_item">
-                          <div class="item_in">
-                            <p>Tools & software platform : :</p>
-                            <h3 class="progress_title">
-                              Node js , Docker , Kubernetes , Jenkins ,
-                              Postman and Github.
-                            </h3>
-                            <span class="progress_percent"></span>
-                            <div class="bg_wrap">
-                              <div class="progress_bg"></div>
-                            </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">DeFi & Protocols</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">DEX / AMM Design</span>
+                            <span class="skill_tag">Liquidity Pools</span>
+                            <span class="skill_tag">Staking</span>
+                            <span class="skill_tag">Yield Farming</span>
+                            <span class="skill_tag">ERC-20</span>
+                            <span class="skill_tag">HTS</span>
+                            <span class="skill_tag">SPL</span>
                           </div>
                         </div>
-
-                        <div class="progress_item">
-                          <div class="item_in">
-                            <p>Databases : :</p>
-                            <h3 class="progress_title">
-                              Mysql , Sqlite , Redis , MongoDB and Firebase.
-                            </h3>
-                            <span class="progress_percent"></span>
-                            <div class="bg_wrap">
-                              <div class="progress_bg"></div>
-                            </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">AI & Data Science</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Machine Learning</span>
+                            <span class="skill_tag">Anomaly Detection</span>
+                            <span class="skill_tag">Graph Analytics</span>
+                            <span class="skill_tag">Network Science</span>
+                            <span class="skill_tag">Python</span>
                           </div>
                         </div>
-
-                        <div class="progress_item">
-                          <div class="item_in">
-                            <p>IDE's : :</p>
-                            <h3 class="progress_title">
-                              VS code , VS code studio and Spyder.
-                            </h3>
-                            <span class="progress_percent"></span>
-                            <div class="bg_wrap">
-                              <div class="progress_bg"></div>
-                            </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">Web3 Tools</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Web3.js</span>
+                            <span class="skill_tag">Ethers.js</span>
+                            <span class="skill_tag">Wagmi</span>
+                            <span class="skill_tag">IPFS</span>
+                            <span class="skill_tag">The Graph</span>
+                            <span class="skill_tag">Chainlink</span>
+                            <span class="skill_tag">WalletConnect</span>
+                          </div>
+                        </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">Infrastructure</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Docker</span>
+                            <span class="skill_tag">Kubernetes</span>
+                            <span class="skill_tag">AWS</span>
+                            <span class="skill_tag">Azure</span>
+                            <span class="skill_tag">CI/CD</span>
+                            <span class="skill_tag">PostgreSQL</span>
+                            <span class="skill_tag">MongoDB</span>
+                            <span class="skill_tag">Redis</span>
+                          </div>
+                        </div>
+                        <div class="skill_group">
+                          <h5 class="skill_group_title">Spoken Languages</h5>
+                          <div class="skill_tags">
+                            <span class="skill_tag">Arabic (Native)</span>
+                            <span class="skill_tag">French (Fluent)</span>
+                            <span class="skill_tag">English (Fluent)</span>
                           </div>
                         </div>
                       </div>
-                      <!-- /Progress Bar -->
-
-                      <!-- Description -->
+                      <!-- /Skills Tags -->
                     </div>
                     <!-- /#2 tab content -->
                   </div>
@@ -430,7 +476,7 @@
                     <a href="#" class="next"><span></span></a>
                   </div>
                   <h3 class="subtitle">Portfolio</h3>
-                  <h3 class="title">Licenses & certifications</h3>
+                  <h3 class="title">Projects & Contributions</h3>
                 </div>
                 <!-- /Main Title -->
               </div>
@@ -438,169 +484,88 @@
 
             <div class="container noright">
               <div class="roww">
-                <div class="owl-carousel modal_items" data-from="portfolio" data-count="5">
+                <div class="owl-carousel modal_items" data-from="portfolio" data-count="7">
                   <div class="item modal_item" data-index="1">
                     <div class="img_holder">
                       <img src="img/thumb/square.jpg" alt="" />
-                      <div class="abs_img" data-bg-img="img/portfolio/Esprit.png"></div>
+                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain1.png"></div>
                     </div>
                     <div class="title_holder">
-                      <p>illustration, design</p>
-                      <h3><a href="#">Sweet Cherry</a></h3>
+                      <p>Lightency / Dar Blockchain (2022-2024)</p>
+                      <h3><a href="#">Powerchain</a></h3>
                     </div>
                     <div class="fn__hidden">
-                      <p class="fn__cat">illustration, design</p>
-                      <h3 class="fn__title">Sweet Cherry</h3>
+                      <p class="fn__cat">Lightency / Dar Blockchain (2022-2024)</p>
+                      <h3 class="fn__title">Powerchain &mdash; Decentralised P2P Energy Marketplace</h3>
                       <div class="img_holder">
                         <img src="img/thumb/square.jpg" alt="" />
-                        <div class="abs_img" data-bg-img="img/portfolio/Esprit.png"></div>
+                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain1.png"></div>
                       </div>
                       <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
+                        Architected on-chain energy tokenisation with staking, liquidity incentives, and automated smart metering on Hedera. Designed token economy and DAO governance for decentralised energy financing across Africa. Deployed cross-chain bridges across Hedera, NEAR, and Aptos. Won NEARCON 2022 Best Sustainability Project award.
                       </p>
                     </div>
                   </div>
                   <div class="item modal_item" data-index="2">
                     <div class="img_holder">
                       <img src="img/thumb/square.jpg" alt="" />
-                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain1.png"></div>
+                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain2.png"></div>
                     </div>
                     <div class="title_holder">
-                      <p>University Of Buffalo</p>
-                      <h3><a href="#">Smart Contracts</a></h3>
+                      <p>Dar Blockchain (2024-2025)</p>
+                      <h3><a href="#">Mariposa</a></h3>
                     </div>
                     <div class="fn__hidden">
-                      <p class="fn__cat">University Of Buffalo</p>
-                      <h3 class="fn__title">Smart Contracts</h3>
+                      <p class="fn__cat">Dar Blockchain (2024 - Jan 2025)</p>
+                      <h3 class="fn__title">Mariposa &mdash; Agentic AI Web3 Wallet on Hedera</h3>
                       <div class="img_holder">
                         <img src="img/thumb/square.jpg" alt="" />
-                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain1.png"></div>
+                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain2.png"></div>
                       </div>
                       <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
+                        Architected an AI-powered agentic wallet enabling autonomous on-chain execution through natural language instructions. Integrated LLM-based agent reasoning layer with Hedera smart contracts for intent parsing, transaction planning, and execution with safety guardrails. Built multi-chain support with DeFi integrations: swaps, staking, liquidity provision, and token management.
                       </p>
                     </div>
                   </div>
                   <div class="item modal_item" data-index="3">
                     <div class="img_holder">
                       <img src="img/thumb/square.jpg" alt="" />
-                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain2.png"></div>
+                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain3.png"></div>
                     </div>
                     <div class="title_holder">
-                      <p>Insead</p>
-                      <h3><a href="#">Introduction to Blochain <br> Technologies</a></h3>
+                      <p>Dar Blockchain (2025)</p>
+                      <h3><a href="#">TalentAI</a></h3>
                     </div>
                     <div class="fn__hidden">
-                      <p class="fn__cat">Insead</p>
-                      <h3 class="fn__title">Introduction to Blochain <br> Technologies</a></h3>
-                      </h3>
+                      <p class="fn__cat">Dar Blockchain (2025 - Present)</p>
+                      <h3 class="fn__title">TalentAI &mdash; AI-Powered On-Chain Recruitment</h3>
                       <div class="img_holder">
                         <img src="img/thumb/square.jpg" alt="" />
-                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain2.png"></div>
+                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain3.png"></div>
                       </div>
                       <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
+                        Built AI-driven hiring platform on Hedera with on-chain credentials, token-gated access, and verifiable attestations. Won 3rd Place + $50,000 grant at Hedera Hackathon 2025 &mdash; recognised for innovation in AI-powered blockchain hiring infrastructure.
                       </p>
                     </div>
                   </div>
                   <div class="item modal_item" data-index="4">
                     <div class="img_holder">
                       <img src="img/thumb/square.jpg" alt="" />
-                      <div class="abs_img" data-bg-img="img/portfolio/Blockchain3.png"></div>
-                    </div>
-                    <div class="title_holder">
-                      <p>University Of Colorado</p>
-                      <h3><a href="#">Asymetric Cryptography</a></h3>
-                    </div>
-                    <div class="fn__hidden">
-                      <p class="fn__cat">University Of Colorado</p>
-                      <h3 class="fn__title">Asymetric Cryptography</a></h3>
-                      </h3>
-                      <div class="img_holder">
-                        <img src="img/thumb/square.jpg" alt="" />
-                        <div class="abs_img" data-bg-img="img/portfolio/Blockchain3.png"></div>
-                      </div>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                    </div>
-                  </div>
-                  <div class="item modal_item" data-index="5">
-                    <div class="img_holder">
-                      <img src="img/thumb/square.jpg" alt="" />
                       <div class="abs_img" data-bg-img="img/portfolio/Blockchain4.png"></div>
                     </div>
                     <div class="title_holder">
-                      <p>Udemy</p>
-                      <h3><a href="#">Blockchain A..Z</a></h3>
+                      <p>Dar Blockchain (2024)</p>
+                      <h3><a href="#">EvoBots</a></h3>
                     </div>
                     <div class="fn__hidden">
-                      <p class="fn__cat">Udemy</p>
-                      <h3 class="fn__title">Blockchain A..Z</a></h3>
-                      </h3>
+                      <p class="fn__cat">Dar Blockchain (2024)</p>
+                      <h3 class="fn__title">EvoBots &mdash; Play-to-Earn Telegram Game on TON</h3>
                       <div class="img_holder">
                         <img src="img/thumb/square.jpg" alt="" />
                         <div class="abs_img" data-bg-img="img/portfolio/Blockchain4.png"></div>
                       </div>
                       <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                    </div>
-                  </div>
-                  <div class="item modal_item" data-index="5">
-                    <div class="img_holder">
-                      <img src="img/thumb/square.jpg" alt="" />
-                      <div class="abs_img" data-bg-img="img/portfolio/cloud.png"></div>
-                    </div>
-                    <div class="title_holder">
-                      <p>Udemy</p>
-                      <h3><a href="#">Docker Mastery Certification</a></h3>
-                    </div>
-                    <div class="fn__hidden">
-                      <p class="fn__cat">Udemy</p>
-                      <h3 class="fn__title">Docker Mastery Certification</h3>
-                      <div class="img_holder">
-                        <img src="img/thumb/square.jpg" alt="" />
-                        <div class="abs_img" data-bg-img="img/portfolio/cloud.png"></div>
-                      </div>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
+                        Led end-to-end development of a Telegram-native play-to-earn game deployed on The Open Network (TON). Designed NFT-based bot evolution mechanics with on-chain ownership and crypto reward systems. Integrated Telegram Mini App architecture with TON wallet connectivity for seamless Web2-to-Web3 onboarding.
                       </p>
                     </div>
                   </div>
@@ -610,29 +575,42 @@
                       <div class="abs_img" data-bg-img="img/portfolio/Blockchain5.png"></div>
                     </div>
                     <div class="title_holder">
-                      <p>Udemy</p>
-                      <h3><a href="#">Ethereum Blockchain <br> Developer Bootcamp</a></h3>
+                      <p>Dar Blockchain (2023)</p>
+                      <h3><a href="#">EagleFi</a></h3>
                     </div>
                     <div class="fn__hidden">
-                      <p class="fn__cat">Udemy</p>
-                      <h3 class="fn__title">Ethereum Blockchain <br> Developer Bootcamp</a></h3>
-                      </h3>
+                      <p class="fn__cat">Dar Blockchain (2023)</p>
+                      <h3 class="fn__title">EagleFi &mdash; Decentralised Exchange on Massa</h3>
                       <div class="img_holder">
                         <img src="img/thumb/square.jpg" alt="" />
                         <div class="abs_img" data-bg-img="img/portfolio/Blockchain5.png"></div>
                       </div>
                       <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
-                      </p>
-                      <p class="fn__desc">
-
+                        Led technical development of EagleFi, one of the first DEXs deployed on Massa &mdash; a high-throughput blockchain with autonomous smart contract execution. Built AMM-based liquidity pool architecture enabling permissionless token swaps and liquidity provision. Engineered staking and yield mechanisms.
                       </p>
                     </div>
                   </div>
-
+                  <div class="item modal_item" data-index="6">
+                    <div class="img_holder">
+                      <img src="img/thumb/square.jpg" alt="" />
+                      <div class="abs_img" data-bg-img="img/portfolio/Cloud.png"></div>
+                    </div>
+                    <div class="title_holder">
+                      <p>Dar Blockchain (2024)</p>
+                      <h3><a href="#">Cameleon</a></h3>
+                    </div>
+                    <div class="fn__hidden">
+                      <p class="fn__cat">Dar Blockchain (2024)</p>
+                      <h3 class="fn__title">Cameleon &mdash; Evolvable NFT Marketplace on Massa</h3>
+                      <div class="img_holder">
+                        <img src="img/thumb/square.jpg" alt="" />
+                        <div class="abs_img" data-bg-img="img/portfolio/Cloud.png"></div>
+                      </div>
+                      <p class="fn__desc">
+                        Led development of Cameleon, an NFT marketplace on Massa featuring evolvable NFTs &mdash; digital assets whose metadata, traits, and appearance mutate on-chain based on owner actions and time-based triggers. Designed smart contract logic for dynamic NFT state transitions and marketplace infrastructure.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -640,651 +618,220 @@
           <!-- /Portfolio Section -->
 
 
-          <!-- News Section -->
-          <!--
-            <section id="news">
-              <div class="container">
-                <div class="roww">
-                  <div class="resumo_fn_main_title">
-                    <h3 class="subtitle">News &amp; Tips</h3>
-                    <h3 class="title">Latest Articles</h3>
+          <!-- Teaching & Mentorship Section -->
+          <section id="teaching">
+            <div class="container">
+              <div class="roww">
+                <div class="resumo_fn_main_title">
+                  <h3 class="subtitle">Teaching</h3>
+                  <h3 class="title">Teaching & Mentorship</h3>
+                </div>
+
+                <div class="resumo_fn_boxed_list">
+                  <ul>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>De Vinci Nanterre</h5>
+                          <span>France ( 2025 — Present )</span>
+                        </div>
+                        <h3>Fintech Master Instructor</h3>
+                        <p>
+                          Teach blockchain, DeFi protocols, and smart contract development in the Fintech Master's programme.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>Hashgraph Association</h5>
+                          <span>Global ( 2023 — Present )</span>
+                        </div>
+                        <h3>Official Certifier & Instructor — Hedera Hashgraph</h3>
+                        <p>
+                          Officially certified Hedera Hashgraph instructor and certifier — one of a select global team authorised to examine and certify developers on HTS, HSCS, HCS, and DeFi on Hedera. Part of the global certification team that collectively certified 35,000+ developers worldwide in 2024.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>ESPRIT, SUP'COM & Universities</h5>
+                          <span>Tunisia ( 2023 — Present )</span>
+                        </div>
+                        <h3>Blockchain Development Instructor</h3>
+                        <p>
+                          Design and deliver Hedera blockchain certification programmes. Partner with Hashgraph Association, NEAR Protocol, and Orange MEA for Web3 education across MENA. Mentored 10,000+ developers across Africa in smart contracts, DeFi, and Web3 architecture.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /Teaching & Mentorship Section -->
+
+          <!-- Awards Section -->
+          <section id="awards">
+            <div class="container">
+              <div class="roww">
+                <div class="resumo_fn_main_title">
+                  <h3 class="subtitle">Awards</h3>
+                  <h3 class="title">Awards & Certifications</h3>
+                </div>
+
+                <div class="resumo_fn_boxed_list">
+                  <ul>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>NEARCON 2022</h5>
+                          <span>Best Sustainability Project</span>
+                        </div>
+                        <h3>Powerchain — blockchain-based energy solution</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>Hedera Hackathon 2025</h5>
+                          <span>3rd Place + $50,000 Grant</span>
+                        </div>
+                        <h3>TalentAI — AI-powered on-chain recruitment platform</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>Hedera Africa Hackathon</h5>
+                          <span>Technical Judge</span>
+                        </div>
+                        <h3>Evaluated 1,000+ blockchain projects on innovation and technical merit</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>Community</h5>
+                          <span>Co-founder</span>
+                        </div>
+                        <h3>Web 3.0 North African Community</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>University at Buffalo</h5>
+                          <span>Certification</span>
+                        </div>
+                        <h3>Smart Contracts & Decentralised Applications (DApps)</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>INSEAD</h5>
+                          <span>Certification</span>
+                        </div>
+                        <h3>Introduction to Blockchain Technologies</h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item">
+                        <div class="item_top">
+                          <h5>University of Colorado</h5>
+                          <span>Certification</span>
+                        </div>
+                        <h3>Asymmetric Cryptography</h3>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /Awards Section -->
+
+          <!-- Research Interests Section -->
+          <section id=”research”>
+            <div class=”container”>
+              <div class=”roww”>
+                <div class=”resumo_fn_main_title”>
+                  <h3 class=”subtitle”>Research</h3>
+                  <h3 class=”title”>Research Interests</h3>
+                  <p class=”desc”>
+                    My research sits at the intersection of blockchain systems, machine learning, and financial economics. I am particularly interested in applying computational and data-driven methods to understand, model, and improve decentralised systems.
+                  </p>
+                </div>
+
+                <div class=”research_grid”>
+                  <div class=”research_card”>
+                    <h4>Blockchain Forensics & On-Chain Analytics</h4>
+                    <p>Applying ML-based anomaly detection on large-scale on-chain transaction data for fraud identification, pump-and-dump pattern recognition, and illicit activity tracing across multi-chain ecosystems.</p>
                   </div>
-
-                  <div class="resumo_fn_blog_list">
-                    <ul class="modal_items" data-from="blog" data-count="5">
-                      <li>
-                        <div class="item modal_item" data-index="1">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/1.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>September 22, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >Five Solid Evidences Attending Design Is Good
-                                For Your Career Development.</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">September 22, 2021</p>
-                            <h3 class="fn__title">
-                              Five Solid Evidences Attending Design Is Good For
-                              Your Career Development.
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/1.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item modal_item" data-index="2">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/2.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>September 17, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >Ten Mind-Blowing Reasons Why Design Is Using
-                                This Technique For Exposure.</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">September 17, 2021</p>
-                            <h3 class="fn__title">
-                              Ten Mind-Blowing Reasons Why Design Is Using This
-                              Technique For Exposure.
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/2.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item modal_item" data-index="3">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/3.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>September 04, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >I Will Tell You The Truth About Design In The
-                                Next 60 Seconds.</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">September 04, 2021</p>
-                            <h3 class="fn__title">
-                              I Will Tell You The Truth About Design In The Next
-                              60 Seconds.
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/3.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="item modal_item" data-index="4">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/4.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>August 18, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >What You Know About Design And What You Don't
-                                Know About Design.</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">August 18, 2021</p>
-                            <h3 class="fn__title">
-                              What You Know About Design And What You Don't Know
-                              About Design.
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/4.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="be_animated">
-                        <div class="item modal_item" data-index="5">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/5.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>August 15, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >Forgive Yourself for Not Being Perfect. Then Do
-                                It Again Tomorrow.</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">August 15, 2021</p>
-                            <h3 class="fn__title">
-                              Forgive Yourself for Not Being Perfect. Then Do It
-                              Again Tomorrow.
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/5.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="be_animated">
-                        <div class="item modal_item" data-index="6">
-                          <div class="img_holder">
-                            <img src="img/thumb/square.jpg" alt="" />
-                            <div
-                              class="abs_img"
-                              data-bg-img="img/blog/6.jpg"
-                            ></div>
-                          </div>
-                          <div class="title_holder">
-                            <p>August 01, 2021</p>
-                            <h3>
-                              <a href="#"
-                                >Why Decorating Your Home Is Good for Your
-                                Mental Health</a
-                              >
-                            </h3>
-                          </div>
-                          <div class="fn__hidden">
-                            <p class="fn__cat">August 01, 2021</p>
-                            <h3 class="fn__title">
-                              Why Decorating Your Home Is Good for Your Mental
-                              Health
-                            </h3>
-                            <div class="img_holder">
-                              <img src="img/thumb/square.jpg" alt="" />
-                              <div
-                                class="abs_img"
-                                data-bg-img="img/blog/6.jpg"
-                              ></div>
-                            </div>
-                            <p class="fn__desc">
-                              Sed ornare tellus a odio bibendum, at tristique
-                              sapien malesuada. Proin sagittis maximus accumsan.
-                              Class aptent taciti sociosqu ad litora torquent
-                              per conubia nostra, per inceptos himenaeos. Lorem
-                              ipsum dolor sit amet, consectetur adipiscing elit.
-                              Quisque gravida quam sit amet elit varius tempor.
-                              Pellentesque purus eros, blandit eu mollis vel,
-                              commodo eget orci. Proin vel hendrerit ex. Vivamus
-                              ut ex at nunc consectetur efficitur ut quis est.
-                              Proin posuere orci eget vulputate fringilla.
-                              Curabitur placerat massa eget efficitur cursus.
-                              Sed sollicitudin rhoncus blandit. Nam accumsan
-                              vestibulum enim. Sed rutrum eu leo pellentesque
-                              lobortis. Integer ornare fringilla arcu, eu mattis
-                              risus convallis in.
-                            </p>
-                            <p class="fn__desc">
-                              Quisque dui metus, eleifend at enim ac, imperdiet
-                              sagittis dolor. Vestibulum ipsum quam, feugiat non
-                              velit sit amet, pulvinar varius nisl. Mauris
-                              tristique, ipsum sit amet lacinia congue, mauris
-                              magna tempus nibh, in mollis eros enim a tortor.
-                              Morbi enim arcu, tristique vitae mi nec, hendrerit
-                              pharetra metus. Phasellus id feugiat purus. In vel
-                              elit eu lacus ultrices feugiat. Etiam at aliquet
-                              mi. Nunc sit amet libero sit amet lectus
-                              pellentesque sagittis. Curabitur blandit ante quis
-                              erat dapibus viverra. Maecenas consequat pulvinar
-                              pulvinar. Donec in aliquam arcu. Donec eu laoreet
-                              dolor. Ut nisi lectus, pulvinar ac mattis quis,
-                              pretium ac nulla. Morbi sed ligula ultrices,
-                              ornare mauris id, auctor arcu. Sed pellentesque ex
-                              sed erat faucibus, ultrices vehicula ex dapibus.
-                              Aenean venenatis metus eros, vel faucibus lorem
-                              porttitor eu.
-                            </p>
-                            <p class="fn__desc">
-                              Sed porttitor augue erat, vitae convallis odio
-                              viverra id. In nec finibus elit. Nullam ac sodales
-                              nunc, vel sagittis elit. Ut condimentum ex ipsum,
-                              eu ornare odio aliquam eu. Ut iaculis eros quam,
-                              eu bibendum tellus convallis quis. Donec sapien
-                              risus, consequat ut magna nec, interdum porta
-                              nisl. Vivamus pulvinar hendrerit finibus. Nunc
-                              molestie lacinia risus, id mattis nunc euismod ac.
-                              Nam eu orci felis. Quisque ut elementum quam.
-                              Vivamus pulvinar nisi nunc, ut faucibus turpis
-                              tincidunt eget. Fusce nec ex quis odio laoreet
-                              consequat. Duis faucibus metus id feugiat sodales.
-                              Sed eu ligula eget quam ultricies tincidunt. Morbi
-                              sodales nunc ultrices justo pellentesque, ac
-                              mattis mi sagittis. Morbi ut consectetur neque.
-                            </p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-
-                    <div class="clearfix"></div>
-
-                    <div class="load_more">
-                      <a
-                        href="#"
-                        data-done="Done"
-                        data-no="No more articles found"
-                      >
-                        <span class="text">Load More Articles</span>
-                        <span class="fn__pulse">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </span>
-                      </a>
-                    </div>
+                  <div class=”research_card”>
+                    <h4>Token Economy Design & Cryptoeconomics</h4>
+                    <p>Studying emergent centralisation phenomena in token distribution, designing incentive-compatible tokenomics, and modelling agent behaviour in DeFi protocols using game theory and network science.</p>
+                  </div>
+                  <div class=”research_card”>
+                    <h4>Consensus Mechanism Modelling</h4>
+                    <p>Formal analysis and simulation of consensus protocols (hashgraph, PoS, DAG-based) with focus on security guarantees, throughput optimisation, and MEV dynamics.</p>
+                  </div>
+                  <div class=”research_card”>
+                    <h4>AI-Powered DeFi & Autonomous Agents</h4>
+                    <p>Building and studying LLM-based agentic systems for autonomous on-chain execution, intent-driven transactions, and AI-assisted portfolio management in decentralised markets.</p>
                   </div>
                 </div>
               </div>
-            </section> -->
-          <!-- /News Section -->
+            </div>
+          </section>
+          <!-- /Research Interests Section -->
 
           <!-- Contact Section -->
-          <section id="contact">
-            <div class="container">
-              <div class="roww resumo_fn_contact">
+          <section id=”contact”>
+            <div class=”container”>
+              <div class=”roww resumo_fn_contact”>
                 <!-- Main Title -->
-                <div class="resumo_fn_main_title">
-                  <h3 class="subtitle">Contact</h3>
-                  <h3 class="title">Get In Touch</h3>
-                  <p class="desc">
-                    If you have any suggestion, project or even you want to
-                    say “hello”, please fill out the form below and I will
-                    reply you shortly.
+                <div class=”resumo_fn_main_title”>
+                  <h3 class=”subtitle”>Contact</h3>
+                  <h3 class=”title”>Get In Touch</h3>
+                  <p class=”desc”>
+                    If you have any suggestion, research collaboration, or even want to
+                    say hello, please feel free to reach out via the links below or send me a message.
                   </p>
                 </div>
                 <!-- /Main Title -->
 
-                <!-- Contact Form -->
-                <form class="contact_form" action="https://frenify.net/" method="post" autocomplete="off"
-                  data-email="firas.belhiba@esprit.tn">
-                  <!--
-									Don't remove below code in avoid to work contact form properly.
-									You can chance dat-success value with your one. It will be used when user will try to contact via contact form and will get success message.
-								-->
-                  <div class="success" data-success="Your message has been received, we will contact you soon."></div>
-                  <div class="empty_notice">
-                    <span>Please Fill Required Fields!</span>
-                  </div>
-                  <!-- -->
-
-                  <div class="items_wrap">
-                    <div class="items">
-                      <div class="item half">
-                        <div class="input_wrapper">
-                          <input id="name" type="text" />
-                          <span class="moving_placeholder">Name *</span>
-                        </div>
-                      </div>
-                      <div class="item half">
-                        <div class="input_wrapper">
-                          <input id="email" type="email" />
-                          <span class="moving_placeholder">Email *</span>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="input_wrapper">
-                          <input id="phone" type="text" />
-                          <span class="moving_placeholder">Phone</span>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="input_wrapper">
-                          <textarea id="message"></textarea>
-                          <span class="moving_placeholder">Message</span>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <a id="send_message" href="#">Send Message</a>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-                <!-- /Contact Form -->
+                <!-- Contact Links -->
+                <div class="contact_links" style="margin-bottom: 40px;">
+                  <a href="mailto:firasbenhiba49@gmail.com" style="display: inline-block; padding: 12px 30px; border: 1px solid var(--mc); color: var(--mc); font-family: 'Jost', sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: all 0.3s ease; border-radius: 2px; margin-right: 15px; margin-bottom: 10px;">
+                    Send Email
+                  </a>
+                  <a href="https://www.linkedin.com/in/firas-belhiba-4b7b66202/" target="_blank" style="display: inline-block; padding: 12px 30px; border: 1px solid rgba(152,119,80,0.4); color: #ccc; font-family: 'Jost', sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: all 0.3s ease; border-radius: 2px; margin-right: 15px; margin-bottom: 10px;">
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/firasbelhiba" target="_blank" style="display: inline-block; padding: 12px 30px; border: 1px solid rgba(152,119,80,0.4); color: #ccc; font-family: 'Jost', sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: all 0.3s ease; border-radius: 2px; margin-bottom: 10px;">
+                    GitHub
+                  </a>
+                </div>
+                <!-- /Contact Links -->
 
                 <!-- Contact Info -->
                 <div class="resumo_fn_contact_info">
                   <p>Address</p>
-                  <h3>Tunisie , Ariana</h3>
+                  <h3>France</h3>
                   <p>Phone</p>
-                  <h3><a href="tel:+21624375359">(+216) 24 375 359</a></h3>
+                  <h3><a href="tel:+33763808581">(+33) 7 63 808581</a></h3>
                   <p>
-                    <a class="fn__link" href="mailto:firasbenhiba49@gmail.com"><span
-                        class="__cf_email__">firasbenhiba49@gmail.com</span></a>
+                    <a class="fn__link" href="mailto:firasbenhiba49@gmail.com">firasbenhiba49@gmail.com</a>
                   </p>
                   <br>
                   <p>Github</p>
                   <h3><a href="https://github.com/firasbelhiba" target="_blank">firasbelhiba</a></h3>
-                  <p>Linkedin</p>
+                  <p>LinkedIn</p>
                   <h3><a href="https://www.linkedin.com/in/firas-belhiba-4b7b66202/" target="_blank">Firas Belhiba</a>
                   </h3>
-                  <p>Twitter</p>
-                  <h3><a href="https://twitter.com/Yodeleheeee" target="_blank">@Yodeleheeee</a></h3>
                 </div>
                 <!-- /Contact Info -->
               </div>
@@ -1338,9 +885,10 @@
               <h3>
                 <span class="animated_title">
                   <span class="title_in">Firas Belhiba</span>
-                  <span class="title_in">Blockchain Developer</span>
-                  <span class="title_in">Full-stack Developer</span>
-                  <span class="title_in">Software engineer</span>
+                  <span class="title_in">Blockchain Engineer</span>
+                  <span class="title_in">CTO & Tech Lead</span>
+                  <span class="title_in">MSc Finance & AI</span>
+                  <span class="title_in">PhD Applicant</span>
                 </span>
               </h3>
             </div>
@@ -1348,7 +896,7 @@
           <div class="right_bottom">
             <a href="#contact">
               <span class="circle"></span>
-              <span class="text">I’m available for a freelance job. Hire me</span>
+              <span class="text">Open to research collaborations. Get in touch</span>
             </a>
           </div>
         </div>
@@ -1370,6 +918,9 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -1420,8 +971,6 @@
   <!-- /Wrapper All -->
 
   <!-- Scripts -->
-  <script data-cfasync="false"
-    src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="js/jquery7dd3.js?ver=4"></script>
   <script src="js/typed7dd3.js?ver=4"></script>
   <script src="js/owl-carousel7dd3.js?ver=4"></script>
@@ -1432,6 +981,5 @@
   <!-- /Scripts -->
 </body>
 
-<!-- Mirrored from frenify.net/envato/frenify/html/resumo/1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 06:15:37 GMT -->
 
 </html>
