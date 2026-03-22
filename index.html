@@ -135,7 +135,7 @@
 
     /* Press & Coverage section */
     #press .press_category {
-      margin-bottom: 35px !important;
+      margin-bottom: 40px !important;
     }
     #press .press_category:last-child {
       margin-bottom: 0 !important;
@@ -147,16 +147,56 @@
       letter-spacing: 1px !important;
       text-transform: uppercase !important;
       color: var(--mc) !important;
-      margin-bottom: 15px !important;
-      padding-bottom: 8px !important;
+      margin-bottom: 18px !important;
+      padding-bottom: 10px !important;
       border-bottom: 1px solid rgba(152, 119, 80, 0.15) !important;
     }
     #press .press_item {
-      padding: 15px 0 !important;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 18px !important;
+      padding: 16px !important;
+      margin-bottom: 12px !important;
+      border: 1px solid rgba(152, 119, 80, 0.12) !important;
+      border-radius: 6px !important;
+      background: rgba(152, 119, 80, 0.03) !important;
+      transition: all 0.3s ease !important;
+    }
+    #press .press_item:hover {
+      border-color: rgba(152, 119, 80, 0.3) !important;
+      background: rgba(152, 119, 80, 0.07) !important;
+      transform: translateY(-2px) !important;
     }
     #press .press_item:last-child {
-      border-bottom: none !important;
+      margin-bottom: 0 !important;
+    }
+    #press .press_thumb {
+      flex-shrink: 0 !important;
+      width: 120px !important;
+      height: 80px !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      background: rgba(255, 255, 255, 0.05) !important;
+    }
+    #press .press_thumb img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+    #press .press_info {
+      flex: 1 !important;
+      min-width: 0 !important;
+    }
+    #press .press_source {
+      font-family: 'Jost', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.5px !important;
+      text-transform: uppercase !important;
+      color: var(--mc) !important;
+      margin-bottom: 4px !important;
+      display: block !important;
     }
     #press .press_item h4 {
       font-family: 'Jost', sans-serif !important;
@@ -183,6 +223,15 @@
       line-height: 1.7 !important;
       color: #888 !important;
       margin: 0 !important;
+    }
+    @media (max-width: 576px) {
+      #press .press_item {
+        flex-direction: column !important;
+      }
+      #press .press_thumb {
+        width: 100% !important;
+        height: 160px !important;
+      }
     }
 
     /* Boxed list hover effect for Teaching/Awards */
@@ -846,156 +895,295 @@
                 <div class="press_category">
                   <h5 class="press_category_title">Podcast & Video Appearances</h5>
                   <div class="press_item">
-                    <h4>The Block Talks &mdash; "Africa's Blockchain Awakening Series 1"</h4>
-                    <p>Full podcast episode. Guest: Firas Belhiba (Dar Blockchain). Host: Dr. Tammy Francis. Topics: Africa's blockchain journey, SMS-based blockchain in Tanzania, Hedera Hackathon.</p>
+                    <div class="press_info">
+                      <span class="press_source">The Block Talks</span>
+                      <h4>Africa's Blockchain Awakening Series 1</h4>
+                      <p>Full podcast episode. Guest: Firas Belhiba (Dar Blockchain). Host: Dr. Tammy Francis. Topics: Africa's blockchain journey, SMS-based blockchain in Tanzania, Hedera Hackathon.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.youtube.com/watch?v=gMTZEnde" target="_blank" rel="noopener noreferrer">The Block Talks &mdash; "Building the Future: Inside Africa's $1M Hedera Hackathon" Series 2</a></h4>
-                    <p>Second clip from the same interview series. Guest: Firas Belhiba of DAR BLOCKCHAIN.</p>
+                    <div class="press_info">
+                      <span class="press_source">The Block Talks &mdash; YouTube</span>
+                      <h4><a href="https://www.youtube.com/watch?v=gMTZEnde" target="_blank" rel="noopener noreferrer">Building the Future: Inside Africa's $1M Hedera Hackathon &mdash; Series 2</a></h4>
+                      <p>Second clip from the same interview series. Guest: Firas Belhiba of DAR BLOCKCHAIN.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://lnkd.in/eANRhMeq" target="_blank" rel="noopener noreferrer">ICORBP "The Block" LinkedIn Live &mdash; "Building Africa's Web3 Future with Dar Blockchain & Hedera"</a></h4>
-                    <p>54-minute LinkedIn Live. Firas Belhiba, CTO of Dar Blockchain featured as guest, co-hosted by Dr. Tammy Francis.</p>
+                    <div class="press_info">
+                      <span class="press_source">ICORBP &mdash; LinkedIn Live</span>
+                      <h4><a href="https://lnkd.in/eANRhMeq" target="_blank" rel="noopener noreferrer">Building Africa's Web3 Future with Dar Blockchain & Hedera</a></h4>
+                      <p>54-minute LinkedIn Live. Firas Belhiba, CTO of Dar Blockchain featured as guest, co-hosted by Dr. Tammy Francis.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://lnkd.in/eu-AQJ2z" target="_blank" rel="noopener noreferrer">"La Technologie Blockchain en Afrique Francophone" YouTube Live</a></h4>
-                    <p>French-language YouTube livestream featuring Firas Belhiba (Technical Lead chez Dar Blockchain) &mdash; overview of the $2M Hedera Hackathon.</p>
+                    <div class="press_info">
+                      <span class="press_source">YouTube Live &mdash; French</span>
+                      <h4><a href="https://lnkd.in/eu-AQJ2z" target="_blank" rel="noopener noreferrer">La Technologie Blockchain en Afrique Francophone</a></h4>
+                      <p>French-language YouTube livestream featuring Firas Belhiba (Technical Lead chez Dar Blockchain) &mdash; overview of the $2M Hedera Hackathon.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="press_category">
                   <h5 class="press_category_title">Press & News Articles</h5>
                   <div class="press_item">
-                    <h4><a href="https://lnkd.in/gMTZEnde" target="_blank" rel="noopener noreferrer">Vincent Rey Vicente / ICORBP Newsletter &mdash; "Africa's Web3 Moment"</a></h4>
-                    <p>Feature story: "Tammy Francis, Ph.D. sat down with Mr. Firas Belhiba, CTO of DAR BLOCKCHAIN, for an exclusive deep dive."</p>
+                    <div class="press_info">
+                      <span class="press_source">ICORBP Newsletter</span>
+                      <h4><a href="https://lnkd.in/gMTZEnde" target="_blank" rel="noopener noreferrer">Africa's Web3 Moment &mdash; Vincent Rey Vicente</a></h4>
+                      <p>Feature story: "Tammy Francis, Ph.D. sat down with Mr. Firas Belhiba, CTO of DAR BLOCKCHAIN, for an exclusive deep dive."</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.prnewswire.com/news-releases/hedera-africa-hackathon-launches-with-1m-prize-pool-to-accelerate-africas-digital-future-302465714.html" target="_blank" rel="noopener noreferrer">PR Newswire &mdash; "Hedera Africa Hackathon Launches with $1M Prize Pool" (May 2025)</a></h4>
-                    <p>Official press release naming Dar Blockchain as lead operator.</p>
+                    <div class="press_thumb">
+                      <a href="https://www.prnewswire.com/news-releases/hedera-africa-hackathon-launches-with-1m-prize-pool-to-accelerate-africas-digital-future-302465714.html" target="_blank" rel="noopener noreferrer">
+                        <img src="https://mma.prnewswire.com/media/2696610/Hedera_Africa_Hackathon.jpg?p=facebook" alt="PR Newswire - Hedera Africa Hackathon" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">PR Newswire &mdash; May 2025</span>
+                      <h4><a href="https://www.prnewswire.com/news-releases/hedera-africa-hackathon-launches-with-1m-prize-pool-to-accelerate-africas-digital-future-302465714.html" target="_blank" rel="noopener noreferrer">Hedera Africa Hackathon Launches with $1M Prize Pool</a></h4>
+                      <p>Official press release naming Dar Blockchain as lead operator.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://cointelegraph.com/news/hedera-launches-hackathon-in-africa-to-uncover-emerging-talents" target="_blank" rel="noopener noreferrer">Cointelegraph (May 2025)</a></h4>
-                    <p>Dar Blockchain named as operator of the $1M Hedera Africa Hackathon.</p>
+                    <div class="press_thumb">
+                      <a href="https://cointelegraph.com/news/hedera-launches-hackathon-in-africa-to-uncover-emerging-talents" target="_blank" rel="noopener noreferrer">
+                        <img src="https://s3.cointelegraph.com/uploads/2025-05/01970c71-3dcb-7ebd-8dc3-10c86c1c999b" alt="Cointelegraph - Hedera Hackathon" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">Cointelegraph &mdash; May 2025</span>
+                      <h4><a href="https://cointelegraph.com/news/hedera-launches-hackathon-in-africa-to-uncover-emerging-talents" target="_blank" rel="noopener noreferrer">Hedera Launches Hackathon in Africa to Uncover Emerging Talents</a></h4>
+                      <p>Dar Blockchain named as operator of the $1M Hedera Africa Hackathon.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://techafricanews.com/2025/05/27/hedera-africa-hackathon-2025-launches-with-1m-prize-pool-to-power-web3-innovation-across-africa/" target="_blank" rel="noopener noreferrer">TechAfrica News (May 2025)</a></h4>
-                    <p>Dar Blockchain named as lead operator.</p>
+                    <div class="press_thumb">
+                      <a href="https://techafricanews.com/2025/05/27/hedera-africa-hackathon-2025-launches-with-1m-prize-pool-to-power-web3-innovation-across-africa/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://techafricanews.com/wp-content/uploads/2025/05/HEDERA.png" alt="TechAfrica News - Hedera" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">TechAfrica News &mdash; May 2025</span>
+                      <h4><a href="https://techafricanews.com/2025/05/27/hedera-africa-hackathon-2025-launches-with-1m-prize-pool-to-power-web3-innovation-across-africa/" target="_blank" rel="noopener noreferrer">Hedera Africa Hackathon 2025 Launches with $1M Prize Pool</a></h4>
+                      <p>Dar Blockchain named as lead operator.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.tahawultech.com/news/orange-hashgraph-association-and-dar-blockchain-launch-1-million-hackathon/" target="_blank" rel="noopener noreferrer">TahawulTech (August 2025)</a></h4>
-                    <p>Dar Blockchain named as operator in partnership with Orange Digital Centers across 16 countries.</p>
+                    <div class="press_thumb">
+                      <a href="https://www.tahawultech.com/news/orange-hashgraph-association-and-dar-blockchain-launch-1-million-hackathon/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.tahawultech.com/wp-content/uploads/2025/08/Untitled-design-58-copy-4-1.jpg" alt="TahawulTech - Hackathon" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">TahawulTech &mdash; August 2025</span>
+                      <h4><a href="https://www.tahawultech.com/news/orange-hashgraph-association-and-dar-blockchain-launch-1-million-hackathon/" target="_blank" rel="noopener noreferrer">Orange, Hashgraph & Dar Blockchain Launch $1M Hackathon</a></h4>
+                      <p>Dar Blockchain named as operator in partnership with Orange Digital Centers across 16 countries.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://en.cryptonomist.ch/2025/08/23/hedera-africa-hackathon-competition/" target="_blank" rel="noopener noreferrer">Cryptonomist (August 2025)</a></h4>
-                    <p>Dar Blockchain described as "Pan-African hub of reference in Web3".</p>
+                    <div class="press_thumb">
+                      <a href="https://en.cryptonomist.ch/2025/08/23/hedera-africa-hackathon-competition/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://en.cryptonomist.ch/wp-content/uploads/2025/08/hedera-africa-hackathon.jpg" alt="Cryptonomist - Hedera Africa" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">Cryptonomist &mdash; August 2025</span>
+                      <h4><a href="https://en.cryptonomist.ch/2025/08/23/hedera-africa-hackathon-competition/" target="_blank" rel="noopener noreferrer">Hedera Africa Hackathon Competition</a></h4>
+                      <p>Dar Blockchain described as "Pan-African hub of reference in Web3".</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://laraontheblock.com/the-africa-hedera-hackathon-adds-1-million-to-pool-prize-making-total-2-million/" target="_blank" rel="noopener noreferrer">LARA on the Block (September 2025)</a></h4>
-                    <p>Dar Blockchain named as lead operator as prize pool doubled to $2M.</p>
+                    <div class="press_thumb">
+                      <a href="https://laraontheblock.com/the-africa-hedera-hackathon-adds-1-million-to-pool-prize-making-total-2-million/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://laraontheblock.com/wp-content/uploads/2025/09/UGFS-Hackathon-image.png" alt="LARA on the Block" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">LARA on the Block &mdash; September 2025</span>
+                      <h4><a href="https://laraontheblock.com/the-africa-hedera-hackathon-adds-1-million-to-pool-prize-making-total-2-million/" target="_blank" rel="noopener noreferrer">Africa Hedera Hackathon Adds $1M &mdash; Total Now $2M</a></h4>
+                      <p>Dar Blockchain named as lead operator as prize pool doubled to $2M.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://crypto.news/orange-mea-hashgraph-association-and-dar-blockchain-unite-for-hedera-africa-hackathon/" target="_blank" rel="noopener noreferrer">Crypto.news &mdash; "Orange MEA, Hashgraph & Dar Blockchain launch Hedera Africa Hackathon" (August 2025)</a></h4>
-                    <p>Orange MEA, Hashgraph Association and Dar Blockchain unite for Hedera Africa Hackathon.</p>
+                    <div class="press_thumb">
+                      <a href="https://crypto.news/orange-mea-hashgraph-association-and-dar-blockchain-unite-for-hedera-africa-hackathon/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://crypto.news/app/uploads/2024/12/crypto-news-Hedera-Hashgraph-HBAR-option04.webp" alt="Crypto.news - Hedera" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">Crypto.news &mdash; August 2025</span>
+                      <h4><a href="https://crypto.news/orange-mea-hashgraph-association-and-dar-blockchain-unite-for-hedera-africa-hackathon/" target="_blank" rel="noopener noreferrer">Orange MEA, Hashgraph & Dar Blockchain Launch Hedera Africa Hackathon</a></h4>
+                      <p>Orange MEA, Hashgraph Association and Dar Blockchain unite for Hedera Africa Hackathon.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="press_category">
                   <h5 class="press_category_title">Training Sessions & Speaking Events</h5>
                   <div class="press_item">
-                    <h4>Hedera-Hackathons &mdash; "Meet Your Expert Trainer for Tomorrow's Session!"</h4>
-                    <p>Official Hedera-Hackathons page introduces Firas Belhiba as trainer for the HCS-10 Protocol / Decentralized AI Agent / Langchain session.</p>
+                    <div class="press_info">
+                      <span class="press_source">Hedera-Hackathons &mdash; LinkedIn</span>
+                      <h4>Meet Your Expert Trainer for Tomorrow's Session!</h4>
+                      <p>Official Hedera-Hackathons page introduces Firas Belhiba as trainer for the HCS-10 Protocol / Decentralized AI Agent / Langchain session.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Hedera-Hackathons &mdash; "Play-to-Earn Tokenomics" Training Session</h4>
-                    <p>Trainer: Firas Belhiba &mdash; CTO Dar Blockchain. Topic: Play-to-Earn Tokenomics, Track 3: Immersive Experiences.</p>
+                    <div class="press_info">
+                      <span class="press_source">Hedera-Hackathons &mdash; LinkedIn</span>
+                      <h4>Play-to-Earn Tokenomics Training Session</h4>
+                      <p>Trainer: Firas Belhiba &mdash; CTO Dar Blockchain. Topic: Play-to-Earn Tokenomics, Track 3: Immersive Experiences.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Dar Blockchain &mdash; "Step-by-step guidance for your Web3 journey"</h4>
-                    <p>Discord session led by Firas, Tech Lead at Dar Blockchain.</p>
+                    <div class="press_info">
+                      <span class="press_source">Dar Blockchain &mdash; Discord</span>
+                      <h4>Step-by-step guidance for your Web3 journey</h4>
+                      <p>Discord session led by Firas, Tech Lead at Dar Blockchain.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Dar Blockchain &mdash; "Session on early decisions that shape everything"</h4>
-                    <p>Web3 project-building session led by expert Firas Belhiba.</p>
+                    <div class="press_info">
+                      <span class="press_source">Dar Blockchain &mdash; LinkedIn</span>
+                      <h4>Session on early decisions that shape everything</h4>
+                      <p>Web3 project-building session led by expert Firas Belhiba.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Blockchain workshop at International School of Fintech, Business Analytics & AI, Sousse</h4>
-                    <p>Dedicated blockchain workshop led by Tech Lead Firas Belhiba at the International School of Fintech in Sousse.</p>
+                    <div class="press_info">
+                      <span class="press_source">Dar Blockchain &mdash; LinkedIn</span>
+                      <h4>Blockchain Workshop at International School of Fintech, Sousse</h4>
+                      <p>Dedicated blockchain workshop led by Tech Lead Firas Belhiba at the International School of Fintech, Business Analytics & AI in Sousse.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.meetup.com/lfdt-lugano-bellinzona/events/310943963/" target="_blank" rel="noopener noreferrer">LFDT Lugano & Bellinzona / San Francisco Meetup (September 2025)</a></h4>
-                    <p>Firas Belhiba listed as speaker &mdash; "Tech lead of Dar Blockchain". 347 attendees across 140 groups.</p>
+                    <div class="press_thumb">
+                      <a href="https://www.meetup.com/lfdt-lugano-bellinzona/events/310943963/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://secure-content.meetupstatic.com/images/classic-events/530091590/676x676.jpg" alt="LFDT Meetup" />
+                      </a>
+                    </div>
+                    <div class="press_info">
+                      <span class="press_source">Meetup &mdash; September 2025</span>
+                      <h4><a href="https://www.meetup.com/lfdt-lugano-bellinzona/events/310943963/" target="_blank" rel="noopener noreferrer">LFDT Lugano & Bellinzona / San Francisco</a></h4>
+                      <p>Firas Belhiba listed as speaker &mdash; "Tech lead of Dar Blockchain". 347 attendees across 140 groups.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>MCA ACADEMY Webinar (August 2025)</h4>
-                    <p>MCA ACADEMY in partnership with Dar Blockchain webinar on the Hedera Hackathon. Firas Belhiba tagged as speaker.</p>
+                    <div class="press_info">
+                      <span class="press_source">MCA Academy &mdash; August 2025</span>
+                      <h4>MCA ACADEMY Webinar &mdash; Hedera Hackathon</h4>
+                      <p>MCA ACADEMY in partnership with Dar Blockchain webinar on the Hedera Hackathon. Firas Belhiba tagged as speaker.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>EMLV De Vinci Nanterre &mdash; Blockchain Class</h4>
-                    <p>Prof. Achraf Ayadi, Ph.D. welcomes Firas Belhiba (CTO of Lightency) into his blockchain class. External confirmation of teaching at De Vinci Nanterre.</p>
+                    <div class="press_info">
+                      <span class="press_source">EMLV De Vinci Nanterre</span>
+                      <h4>Blockchain Class &mdash; Prof. Achraf Ayadi, Ph.D.</h4>
+                      <p>Prof. Achraf Ayadi, Ph.D. welcomes Firas Belhiba (CTO of Lightency) into his blockchain class. External confirmation of teaching at De Vinci Nanterre.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="press_category">
                   <h5 class="press_category_title">Third-Party Mentions & Colleague Posts</h5>
                   <div class="press_item">
-                    <h4>Jaafar Saied &mdash; Hedera Africa Hackathon Final Judging</h4>
-                    <p>Co-founder of Dar Blockchain names Firas Belhiba in the list of official judges for the Hedera Africa Hackathon final judging panel. 131 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">Jaafar Saied &mdash; LinkedIn</span>
+                      <h4>Hedera Africa Hackathon Final Judging</h4>
+                      <p>Co-founder of Dar Blockchain names Firas Belhiba in the list of official judges for the Hedera Africa Hackathon final judging panel. 131 reactions.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Mohamed Mnif &mdash; Hackathon Announcement</h4>
-                    <p>Dar Blockchain CEO names Firas Belhiba as part of the team behind the $1M+ Hedera Africa Hackathon. 50 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">Mohamed Mnif &mdash; LinkedIn</span>
+                      <h4>Hackathon Announcement</h4>
+                      <p>Dar Blockchain CEO names Firas Belhiba as part of the team behind the $1M+ Hedera Africa Hackathon. 50 reactions.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Dar Blockchain &mdash; "Meet the Team: Firas Belhiba"</h4>
-                    <p>"Technical leadership is often invisible, but it shapes everything. This edition shines a light on the technical thinking behind our work at Dar Blockchain, led by our Tech Lead Firas Belhiba." 37 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">Dar Blockchain &mdash; LinkedIn</span>
+                      <h4>Meet the Team: Firas Belhiba</h4>
+                      <p>"Technical leadership is often invisible, but it shapes everything. This edition shines a light on the technical thinking behind our work at Dar Blockchain, led by our Tech Lead Firas Belhiba." 37 reactions.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Troudi Khalil &mdash; TalentAI Graduation Post</h4>
-                    <p>Engineering graduate thanks "hatem azaiez (CTO) and Firas Belhiba, my supervisors, for their guidance, mentorship, and expertise." 56 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">Troudi Khalil &mdash; LinkedIn</span>
+                      <h4>TalentAI Graduation Post</h4>
+                      <p>Engineering graduate thanks "hatem azaiez (CTO) and Firas Belhiba, my supervisors, for their guidance, mentorship, and expertise." 56 reactions.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Aziz Ben Ismail &mdash; Internal Project Management Tool</h4>
-                    <p>"un outil incroyable d&eacute;velopp&eacute; en interne par notre entreprise Dar Blockchain, et plus pr&eacute;cis&eacute;ment par le talentueux Firas Belhiba" &mdash; Jira competitor tool. 143 comments.</p>
+                    <div class="press_info">
+                      <span class="press_source">Aziz Ben Ismail &mdash; LinkedIn</span>
+                      <h4>Internal Project Management Tool</h4>
+                      <p>"un outil incroyable d&eacute;velopp&eacute; en interne par notre entreprise Dar Blockchain, et plus pr&eacute;cis&eacute;ment par le talentueux Firas Belhiba" &mdash; Jira competitor tool. 143 comments.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://x.com/i/status/2018240374058197113" target="_blank" rel="noopener noreferrer">JT Connect / John Ojelola &mdash; OAU Nigeria Hedera Certification</a></h4>
-                    <p>"A big thank you to Dar Blockchain for their support and partnership, to our amazing speaker Firas Belhiba..." Full auditorium at Obafemi Awolowo University. 49 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">JT Connect &mdash; LinkedIn / X</span>
+                      <h4><a href="https://x.com/i/status/2018240374058197113" target="_blank" rel="noopener noreferrer">OAU Nigeria Hedera Certification</a></h4>
+                      <p>"A big thank you to Dar Blockchain for their support and partnership, to our amazing speaker Firas Belhiba..." Full auditorium at Obafemi Awolowo University. 49 reactions.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4>Lydia Abdat &mdash; Hedera Developer Certification</h4>
-                    <p>EMLV student thanks "Achraf Ayadi, Ph.D. et Firas Belhiba" for helping her get Hashgraph Developer certified. 40 reactions.</p>
+                    <div class="press_info">
+                      <span class="press_source">Lydia Abdat &mdash; LinkedIn</span>
+                      <h4>Hedera Developer Certification</h4>
+                      <p>EMLV student thanks "Achraf Ayadi, Ph.D. et Firas Belhiba" for helping her get Hashgraph Developer certified. 40 reactions.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="press_category">
                   <h5 class="press_category_title">Hackathon Winner Coverage</h5>
                   <div class="press_item">
-                    <h4><a href="https://hashgraphonline.com/blog/hedera-ai-hackathon-winners/" target="_blank" rel="noopener noreferrer">Hashgraph Online &mdash; "Hedera x AI Hackathon Winners" (June 2025)</a></h4>
-                    <p>TalentAI (Firas's project) featured as a winner.</p>
+                    <div class="press_info">
+                      <span class="press_source">Hashgraph Online &mdash; June 2025</span>
+                      <h4><a href="https://hashgraphonline.com/blog/hedera-ai-hackathon-winners/" target="_blank" rel="noopener noreferrer">Hedera x AI Hackathon Winners</a></h4>
+                      <p>TalentAI (Firas's project) featured as a winner.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://dorahacks.io/buidl/25811" target="_blank" rel="noopener noreferrer">DoraHacks &mdash; TalentAI BUIDL</a></h4>
-                    <p>TalentAI project page on DoraHacks &mdash; hackathon submission.</p>
+                    <div class="press_info">
+                      <span class="press_source">DoraHacks</span>
+                      <h4><a href="https://dorahacks.io/buidl/25811" target="_blank" rel="noopener noreferrer">TalentAI BUIDL</a></h4>
+                      <p>TalentAI project page on DoraHacks &mdash; hackathon submission.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://devpost.com/software/lightency-tracability-and-green-energy-tracking" target="_blank" rel="noopener noreferrer">Devpost &mdash; Lightency / NEARCON 2022</a></h4>
-                    <p>BELHIBA Firas listed as team member on the winning NEARCON sustainability project.</p>
+                    <div class="press_info">
+                      <span class="press_source">Devpost &mdash; NEARCON 2022</span>
+                      <h4><a href="https://devpost.com/software/lightency-tracability-and-green-energy-tracking" target="_blank" rel="noopener noreferrer">Lightency &mdash; Tracability and Green Energy Tracking</a></h4>
+                      <p>BELHIBA Firas listed as team member on the winning NEARCON sustainability project.</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="press_category">
                   <h5 class="press_category_title">Published Articles</h5>
                   <div class="press_item">
-                    <h4><a href="https://www.linkedin.com/pulse/smart-contract-security-comprehensive-guide-firas-belhiba-wnpze" target="_blank" rel="noopener noreferrer">Smart Contract Security: A Comprehensive Guide</a></h4>
-                    <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    <div class="press_info">
+                      <span class="press_source">LinkedIn Pulse</span>
+                      <h4><a href="https://www.linkedin.com/pulse/smart-contract-security-comprehensive-guide-firas-belhiba-wnpze" target="_blank" rel="noopener noreferrer">Smart Contract Security: A Comprehensive Guide</a></h4>
+                      <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.linkedin.com/pulse/wanna-know-how-become-smart-contract-developer-heres-your-belhiba-bguyc" target="_blank" rel="noopener noreferrer">Wanna Know How to Become a Smart Contract Developer? Here's Your Ultimate Guide!</a></h4>
-                    <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    <div class="press_info">
+                      <span class="press_source">LinkedIn Pulse</span>
+                      <h4><a href="https://www.linkedin.com/pulse/wanna-know-how-become-smart-contract-developer-heres-your-belhiba-bguyc" target="_blank" rel="noopener noreferrer">Wanna Know How to Become a Smart Contract Developer? Here's Your Ultimate Guide!</a></h4>
+                      <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    </div>
                   </div>
                   <div class="press_item">
-                    <h4><a href="https://www.linkedin.com/pulse/why-smart-contract-developers-highly-paid-firas-belhiba-rpjrf" target="_blank" rel="noopener noreferrer">Why Smart Contract Developers Are Highly Paid?</a></h4>
-                    <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    <div class="press_info">
+                      <span class="press_source">LinkedIn Pulse</span>
+                      <h4><a href="https://www.linkedin.com/pulse/why-smart-contract-developers-highly-paid-firas-belhiba-rpjrf" target="_blank" rel="noopener noreferrer">Why Smart Contract Developers Are Highly Paid?</a></h4>
+                      <p>LinkedIn Pulse article by Firas Belhiba.</p>
+                    </div>
                   </div>
                 </div>
 
